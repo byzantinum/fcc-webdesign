@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihon Travel Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title" name="title">Nihon Travel Survey Form</h1>
+    <p id="description" name="description">Thank you for taking your time to help us improve Nihon Travel</p>
+    <form action="https://register-demo.freecodecamp.org" name="survey-form" id="survey-form" method="post">
+        <fieldset>
+            <label for="name-label">
+                Name
+                <input type="text" name="name" id="name" class="display-block" placeholder="Enter Your Name" required>
+            </label>
+            <label for="email-label">
+                Email
+                <input type="email" name="email" id="email" class="display-block" placeholder="Enter Your Email" required>
+            </label>
+            <label for="age-label">
+                Age (Optional)
+                <input type="number" name="age" id="age" class="display-block" min="12" max="120" placeholder="Enter Your Age">
+            </label>
+            <label for="gender-label">
+                Gender
+                <label for="male-label">
+                    <input type="radio" name="gender-type" id="gender-male" class="inline" required> Male
+                </label>
+                <label for="female-label">
+                    <input type="radio" name="gender-type" id="gender-male" class="inline" required> Female
+                </label>                
+            </label>
+            <label for="referrer">
+                How did you know about Nihon Travel?
+                <select name="referrer" id="dropdown" class="display-block">
+                    <option value="">(select one)</option>
+                    <option value="1">Instagram</option>
+                    <option value="2">Facebook</option>
+                    <option value="3">Friend or Family</option>
+                </select>
+            </label>
+            <label for="satisfy-check">
+                <p>How Satisfied were you with Nihon Travel?</p>
+                <table id="satisfy-check" name="satisfy-check" class="table-check">
+                    <tr class="row-head">
+                        <th scope="col"></th>
+                        <th scope="col" class="col-1">Very Satisfied</th>
+                        <th scope="col" class="col-1">Satisfied</th>
+                        <th scope="col" class="col-1">Neutral</th>
+                        <th scope="col" class="col-1">Disappointing</th>
+                        <th scope="col" class="col-1">Very Disappointing</th>
+                    </tr>
+                    <tr>
+                        <td scope="row">Hotel</td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="5"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="4"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="3"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="2"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Food</td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="5"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="4"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="3"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="2"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Location</td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="5"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="4"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="3"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="2"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Tour Guide</td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="5"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="4"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="3"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="2"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Transportation</td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="5"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="4"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="3"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="2"></td>
+                        <td scope="row" class="row-input"><input type="checkbox" class="cb" value="1"></td>
+                    </tr>
+                </table>
+            </label>
+            <label for="comment">
+                Suggestion or critique for Nihon Travel to be better
+                <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+</body>
+</html>
